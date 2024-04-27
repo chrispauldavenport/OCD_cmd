@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grid_items",
+  "info": {
+    "singularName": "grid-item",
+    "pluralName": "grid-items",
+    "displayName": "Grid Items",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fragmentTitle": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "fragmentID": {
+      "type": "integer"
+    },
+    "mediaType": {
+      "type": "enumeration",
+      "enum": [
+        "image",
+        "video"
+      ]
+    },
+    "mediaSrc": {
+      "type": "string"
+    },
+    "mediaSrcHighRes": {
+      "type": "string"
+    },
+    "mediaBlurb": {
+      "type": "text"
+    },
+    "provenance": {
+      "type": "enumeration",
+      "enum": [
+        "TEM",
+        "UVA",
+        "OCD",
+        "ONE"
+      ]
+    },
+    "link": {
+      "type": "string"
+    },
+    "fragmentTexts": {
+      "type": "text"
+    },
+    "role": {
+      "type": "string"
+    }
+  }
+}
