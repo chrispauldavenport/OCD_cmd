@@ -6,8 +6,7 @@ module.exports = [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      headers: '*',
-      origin: ['http://localhost:3000']
+      headers: '*'
     }
   },
   'strapi::poweredBy',
