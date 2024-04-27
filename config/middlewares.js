@@ -1,4 +1,4 @@
-const middlewares = [
+module.exports = [
   'strapi::logger',
   'strapi::errors',
   'strapi::security',
@@ -11,16 +11,4 @@ const middlewares = [
   'strapi::public',
 ];
 
-module.exports = {
-  settings: {
-    cors: {
-      enabled: true,
-      origin: ['*'],
-    },
-    ...middlewares.reduce((acc, middleware) => {
-      const [namespace, name] = middleware.split('::');
-      acc[name] = { enabled: true };
-      return acc;
-    }, {}),
-  },
-};
+
