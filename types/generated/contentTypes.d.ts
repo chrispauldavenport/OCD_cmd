@@ -413,7 +413,9 @@ export interface ApiGridItemGridItem extends Schema.CollectionType {
     mediaSrc: Attribute.String;
     mediaSrcHighRes: Attribute.String;
     mediaBlurb: Attribute.Text;
-    provenance: Attribute.Enumeration<['TEM', 'UVA', 'OCD', 'ONE']>;
+    provenance: Attribute.Enumeration<
+      ['TEM', 'UVA', 'OCD', 'ONE', 'MISC', 'M+M', 'PRODJECT', 'PRETTYBIRD']
+    >;
     link: Attribute.String;
     fragmentTexts: Attribute.Text;
     role: Attribute.String;
