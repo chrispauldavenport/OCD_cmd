@@ -419,6 +419,7 @@ export interface ApiGridItemGridItem extends Schema.CollectionType {
     link: Attribute.String;
     fragmentTexts: Attribute.Text;
     role: Attribute.String;
+    order: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
