@@ -420,6 +420,7 @@ export interface ApiGridItemGridItem extends Schema.CollectionType {
     fragmentTexts: Attribute.Text;
     role: Attribute.String;
     order: Attribute.Integer;
+    isPortrait: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
